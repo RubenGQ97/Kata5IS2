@@ -28,7 +28,8 @@ public class Kata5P1 {
         Statement st = con.createStatement();
 
         
-        
+        String q2 = "CREATE TABLE IF NOT EXISTS MAIL ('Id' INTEGER PRIMARY KEY AUTOINCREMENT , 'Mail' TEXT NOT NULL);";
+        st.execute(q2);
         
         
         String q = "SELECT * FROM PEOPLE";
